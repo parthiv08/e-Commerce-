@@ -40,7 +40,7 @@ const NewProduct = () => {
     };
     let handleAdd = (e) => {
         e.preventDefault();
-        fetch("http://localhost:5000/products", {
+        fetch("https://fakestoreapi.com/Products", {
             method: "POST",
             header: {
                 "content-Type": "application/json",

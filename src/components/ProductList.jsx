@@ -17,11 +17,11 @@ import {addItem}from "../store/cartSlice"
 const ProductList = () => {
   let navigate = useNavigate();
 
-  let { products, error, pending,setProducts } = useFetch("http://localhost:5000/products");
+  let { products, error, pending,setProducts } = useFetch("https://fakestoreapi.com/Products");
 
   let handleDelete=(id)=>{
     console.log(id);
-    axios.delete(`http://localhost:5000/products/${id}`)
+    axios.delete(`https://fakestoreapi.com/Products/${id}`)
     
     
     .then(()=>{
